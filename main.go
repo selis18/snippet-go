@@ -18,5 +18,9 @@ func main() {
 	var snippetbox snippet.SnippetBox
 
 	snippetbox.Init()
-
+	snippetbox.Read(4)
+	snippetbox.Add("Первая запись", "Описание записи")
+	snippetbox.Init()
+	snippetbox.Delete(8)
+	snippetbox.Init()
 }
